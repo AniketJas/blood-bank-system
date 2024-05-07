@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+.thead,
+td {
+  padding: 10px;
+  width: 150px;
+  text-align: center;
+}
+
+.thead {
+  border-bottom: 2px solid black;
+}
+
+.tablebox {
+  align-items: flex-start;
+}
+
+.table {
+  align-self: baseline;
+}
+
+.btn {
+  margin: 0;
+  padding: 0;
+}
+
+.edit {
+  background-color: green;
+  height: 30px;
+  width: 70px;
+  border: none;
+  border-radius: 10px;
+  float: left;
+}
+
+.edit a,
+.delete a {
+  color: white;
+  text-decoration: none;
+}
+
+.delete {
+  background-color: red;
+  height: 30px;
+  width: 70px;
+  border: none;
+  border-radius: 10px;
+}
+
+.footer {
+  height: 75px;
+  width: 100%;
+  background-color: #bb342f;
+  color: white;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.heading {
+  font-size: 25px;
+  font-weight: 800;
+  text-align: center;
+  text-decoration: underline;
+  width: 100%;
+}
+
+.approved,
+.rejected,
+.pending,
+.action {
+  font-size: 10px;
+  font-weight: 600;
+  width: 50%;
+  height: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: darkgreen;
+  color: white;
+}
+
+.rejected {
+  background-color: darkred;
+}
+
+.pending {
+  background-color: grey;
+}
+
+.action {
+  width: 80%;
+  background-color: gray;
+}

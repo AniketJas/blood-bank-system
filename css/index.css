@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+.navbar {
+  width: 100%;
+  height: 75px;
+  background-color: #bb342f;
+}
+
+.navbar p {
+  float: left;
+  width: 70%;
+  color: white;
+  font-size: 30px;
+  font-weight: 900;
+  padding-left: 50px;
+  padding-top: 15px;
+}
+
+.navbar ul {
+  float: left;
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 40px;
+}
+
+li {
+  float: left;
+  list-style: none;
+  margin: 20px;
+  margin-top: 30px;
+}
+
+li a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.content {
+  height: 400px;
+  width: 100%;
+  color: white;
+}
+
+.content .con {
+  float: left;
+  height: 300px;
+  width: 60%;
+  padding: 50px;
+}
+
+.con .cont {
+  line-height: 1.4;
+  background-color: #bb342f;
+  padding: 50px;
+  border-radius: 15px;
+}
+
+.cont h5,
+.bbms h3 {
+  font-size: 25px;
+}
+
+.content .img {
+  height: 300px;
+  width: 40%;
+  background-image: url("bloodDonateImg.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  float: left;
+}
+
+.bbms {
+  padding: 50px;
+  padding-top: 0;
+  line-height: 1.4;
+}
+
+.h3 {
+  font-size: 25px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.centers {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 30px;
+  padding: 50px;
+  padding-top: 15px;
+}
+
+.centers .city {
+  border: 2px solid gray;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: #bb342f;
+  color: white;
+}
+
+.city .cityname {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.city hr {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.city .desc {
+  font-size: 16px;
+}
+
+.footer {
+  height: 75px;
+  width: 100%;
+  background-color: #bb342f;
+  color: white;
+  text-align: center;
+  padding-top: 30px;
+}

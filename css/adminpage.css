@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+.contentbox {
+  min-height: 72.5%;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.adminloginbox {
+  height: fit-content;
+  width: 400px;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 25px;
+  text-align: center;
+}
+
+.registrationbox {
+  height: 425px;
+}
+
+.adminloginbox .adminlogin {
+  font-size: 30px;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+
+.adminloginbox hr {
+  margin-bottom: 20px;
+}
+
+.adminloginbox input,
+.adminloginbox textarea,
+.adminloginbox select {
+  width: 90%;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.subbutton {
+  background-color: #bb342f;
+  color: white;
+  border-radius: 10px;
+  border-color: transparent;
+}
