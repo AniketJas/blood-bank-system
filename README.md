@@ -4,7 +4,7 @@ Blood Bank Management System Application made using PHP any MySQL along with HTM
 1. Non-Responsive UI
 2. Fully Functional application
 
-Website Link : https://project8962858338.000webhostapp.com/bbms/ (not working anymore, idk why)
+Website Link : https://project8962858338.000webhostapp.com/bbms/ 
 
 Screenshots:
 
