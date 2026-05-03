@@ -1,27 +1,120 @@
-# Blood Bank Management System
-Blood Bank Management System Application made using PHP any MySQL along with HTML, CSS and vanilla JavaScript
+# Blood Bank Management System (BBMS)
 
-1. Non-Responsive UI
-2. Fully Functional application
+## Description
 
-Website Link : https://project8962858338.000webhostapp.com/bbms/ 
+The Blood Bank Management System (BBMS) is a web-based application designed to streamline the management of blood bank operations. It facilitates donor registration, blood donation requests, patient blood requests, and administrative oversight. The system supports three main user roles: Administrators, Donors, and Patients, each with specific functionalities to ensure efficient blood bank management.
 
-Screenshots:
+## Features
 
-![Screenshot 2024-05-07 140519](https://github.com/AniketJas/blood-bank-system/assets/44704054/0a35ab3d-08de-4140-87a3-943a4b50125e)
+### Admin Features
 
-![Screenshot 2024-05-07 140555](https://github.com/AniketJas/blood-bank-system/assets/44704054/574c8e38-f8bf-429e-b660-9b2b35b9111b)
+- Dashboard for overview of system activities
+- Manage donor details (view, edit, delete)
+- Manage patient details (view, edit, delete)
+- Handle blood donation requests
+- Handle blood request approvals
+- Secure admin login
 
-![Screenshot 2024-05-07 140620](https://github.com/AniketJas/blood-bank-system/assets/44704054/6932ec56-74f4-4f6a-b4d4-1b243f5150fd)
+### Donor Features
 
-![Screenshot 2024-05-07 140635](https://github.com/AniketJas/blood-bank-system/assets/44704054/b96494ee-54c4-44d2-b83b-6a082a7ee558)
+- Donor registration and login
+- Submit blood donation requests
+- View and edit donation requests
+- Dashboard for personal activities
 
-![Screenshot 2024-05-07 140648](https://github.com/AniketJas/blood-bank-system/assets/44704054/d7d5d09a-aa90-4154-a05e-e1ad225c1100)
+### Patient Features
 
-![Screenshot 2024-05-07 140713](https://github.com/AniketJas/blood-bank-system/assets/44704054/e2373d22-92e0-464c-8976-cc0eaa9c5d9c)
+- Patient registration and login
+- Submit blood requests
+- View request history
+- Edit and update requests
+- Dashboard for personal activities
 
-![Screenshot 2024-05-07 140726](https://github.com/AniketJas/blood-bank-system/assets/44704054/c15ed02a-796f-43bc-b662-555cc66ac08c)
+### General Features
 
-![Screenshot 2024-05-07 140738](https://github.com/AniketJas/blood-bank-system/assets/44704054/667e693e-109a-4f99-b43e-2c855fad0c75)
+- Secure authentication for all user types
+- Database-driven storage for all data
+- Responsive web interface with CSS styling
 
-![Screenshot 2024-05-07 140810](https://github.com/AniketJas/blood-bank-system/assets/44704054/688d1b18-d8eb-4de2-9f41-e6e5ec7536c4)
+## Technologies Used
+
+- **Backend**: PHP
+- **Database**: MySQL
+- **Frontend**: HTML, CSS
+- **Server**: Apache (or any PHP-compatible server)
+
+## Installation
+
+1. **Clone the Repository**:
+
+   ```
+   git clone <repository-url>
+   cd blood-bank-system
+   ```
+
+2. **Database Setup**:
+   - Create a MySQL database.
+   - Import the `bbms_db.sql` file into your database:
+     ```
+     mysql -u username -p database_name < bbms_db.sql
+     ```
+
+3. **Configuration**:
+   - Copy `config.example.php` to `config.php`.
+   - Edit `config.php` to include your database credentials:
+     ```php
+     <?php
+     $servername = "localhost";
+     $username = "your_username";
+     $password = "your_password";
+     $dbname = "your_database_name";
+     ?>
+     ```
+
+4. **Server Setup**:
+   - Ensure you have a PHP server (e.g., XAMPP, WAMP, or Apache with PHP).
+   - Place the project files in the server's root directory (e.g., `htdocs` for XAMPP).
+   - Start the server.
+
+## Usage
+
+- **Home Page**: Access `index.php` for the main landing page.
+- **Admin Login**: Navigate to `admin/adminlogin.php` to log in as an administrator.
+- **Donor Login**: Navigate to `donor/donorlogin.php` to log in as a donor.
+- **Patient Login**: Navigate to `patients/patientlogin.php` to log in as a patient.
+- Follow the respective dashboards for user-specific actions.
+
+## Dummy Credentials
+
+For testing purposes, the database includes the following dummy accounts:
+
+### Admin Accounts
+
+- Email: admin1@gmail.com, Password: admin1
+- Email: admin2@gmail.com, Password: admin2
+
+### Donor Accounts
+
+- Email: donor1@gmail.com, Password: donor1
+- Email: donor2@gmail.com, Password: donor2
+
+### Patient Accounts
+
+- Email: patient1@gmail.com, Password: patient1
+- Email: patient2@gmail.com, Password: patient2
+
+## Database Schema
+
+The system uses a MySQL database with tables for admins, donors, patients, donation requests, and blood requests. Refer to `bbms_db.sql` for the complete schema.
+
+## Contributing
+
+Contributions are welcome! Please fork the repository and submit a pull request with your changes.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Contact
+
+For questions or support, please contact [aniket.jas20@gmail.com].
