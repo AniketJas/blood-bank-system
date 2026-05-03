@@ -8,7 +8,7 @@
     session_start();
     $id = $_SESSION['id'];
 
-    $con = mysqli_connect('localhost','root','8338', 'bloodbank');
+    require_once '../config.php';
     $q = "insert into requests(patient_id,blood_group,no_units,reason,status) values('$id','$blood_group','$units','$reason', 0)";
     $rs = mysqli_query($con,$q);
 

@@ -1,10 +1,10 @@
 <html>
     <body>
         <?php
+        require_once '../config.php';
+        
         $id = $_GET['id'];
         $pass = $_GET['pass'];
-
-        $con = mysqli_connect('localhost','root','8338', 'bloodbank');
         $q = "select * from admin where email='$id' and password='$pass' ";
 
         $rs = mysqli_query($con,$q);

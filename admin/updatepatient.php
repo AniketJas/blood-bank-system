@@ -7,7 +7,7 @@
         $pass = $_GET['pass'];
         $mob = $_GET['mob'];
 
-        $con = mysqli_connect('localhost','root','8338','bloodbank');
+        require_once '../config.php';
         $q = "update patients set name='$name', email='$email', password='$pass', mobile='$mob' where id='$id'";
         $result = mysqli_query($con, $q);
 

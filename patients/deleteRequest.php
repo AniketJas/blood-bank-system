@@ -3,7 +3,7 @@
         <?php
         $id = $_GET['requestID'];
 
-        $con = mysqli_connect('localhost','root','8338','bloodbank');
+        require_once '../config.php';
         $q = "delete from requests where request_id='$id'";
         $result = mysqli_query($con, $q);
 

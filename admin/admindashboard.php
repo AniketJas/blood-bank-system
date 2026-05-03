@@ -28,7 +28,7 @@
             </ul>
             </div>";
 
-            $con = mysqli_connect('localhost', 'root', '8338','bloodbank');
+            require_once '../config.php';
             $q = "select * from stock order by sno";
             $rs = mysqli_query($con,$q);
 

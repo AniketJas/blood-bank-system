@@ -44,7 +44,7 @@
         <th class='thead'>Action</th>
         </tr>";
 
-        $con = mysqli_connect('localhost', 'root', '8338','bloodbank');
+        require_once '../config.php';
         $q = "select * from donation where donor_id='$id'";
         $rs = mysqli_query($con,$q);
         

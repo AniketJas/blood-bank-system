@@ -31,7 +31,7 @@
 
         $donationID = $_GET['donationID'];
 
-        $con = mysqli_connect('localhost', 'root', '8338', 'bloodbank');
+        require_once '../config.php';
         $q = "select * from donation where donation_id='$donationID'";
         $rs = mysqli_query($con,$q);
 

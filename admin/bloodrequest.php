@@ -46,7 +46,7 @@
         <th class='thead'>Action</th>
         </tr>";
 
-        $con = mysqli_connect('localhost', 'root', '8338','bloodbank');
+        require_once '../config.php';
         $q = "select * from requests where status=0";
         $rs = mysqli_query($con,$q);
         $sno=1;

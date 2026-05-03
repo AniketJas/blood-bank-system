@@ -30,7 +30,7 @@
 
         $requestID = $_GET['requestID'];
 
-        $con = mysqli_connect('localhost', 'root', '8338', 'bloodbank');
+        require_once '../config.php';
         $q = "select * from requests where request_id='$requestID'";
         $rs = mysqli_query($con,$q);
 

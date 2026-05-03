@@ -27,7 +27,7 @@
             </ul>
             </div>";
 
-            $con = mysqli_connect('localhost', 'root', '8338','bloodbank');
+            require_once '../config.php';
 
             $countApproved = "select COUNT(status) as approved from requests where patient_id='$patient_id' AND status=1";
             $resultApproved = mysqli_fetch_array(mysqli_query($con,$countApproved));

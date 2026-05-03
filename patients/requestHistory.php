@@ -43,7 +43,7 @@
         <th class='thead'>Action</th>
         </tr>";
 
-        $con = mysqli_connect('localhost', 'root', '8338','bloodbank');
+        require_once '../config.php';
         $q = "select * from requests where patient_id='$id'";
         $rs = mysqli_query($con,$q);
         

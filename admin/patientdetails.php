@@ -42,7 +42,7 @@
         <th class='thead' colspan='2'>Action</th>
         </tr>";
 
-        $con = mysqli_connect('localhost', 'root', '8338','bloodbank');
+        require_once '../config.php';
         $q = "select * from patients";
         $rs = mysqli_query($con,$q);
         

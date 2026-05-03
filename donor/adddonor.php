@@ -7,7 +7,7 @@
         $pass = $_GET['pass'];
         $mob = $_GET['mob'];
 
-        $con = mysqli_connect('localhost','root','8338', 'bloodbank');
+        require_once '../config.php';
 
         $q = "insert into donors(name,email,password,mobile) values('$name','$email','$pass','$mob')";
         $rs = mysqli_query($con,$q);

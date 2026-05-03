@@ -30,8 +30,7 @@
         </div>";
 
         $id = $_GET['id'];
-
-        $con = mysqli_connect('localhost', 'root', '8338', 'bloodbank');
+        require_once '../config.php';
         $q = "select * from patients where id='$id'";
         $rs = mysqli_query($con,$q);
 

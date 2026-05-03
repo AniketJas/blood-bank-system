@@ -1,7 +1,5 @@
 <?php
-
-$con = mysqli_connect('localhost', 'root', '8338','bloodbank');
-mysqli_set_charset($con, 'utf8');
+require_once '../config.php';
 
 $id = $_GET['id'];
 $status = $_GET['status'];

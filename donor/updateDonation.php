@@ -5,7 +5,7 @@ $blood_group = $_GET['blood_group'];
 $unit = $_GET['units'];
 $disease = $_GET['disease'];
 
-$con = mysqli_connect('localhost', 'root', '8338', 'bloodbank');
+require_once '../config.php';
 $q = "update donation set blood_group='$blood_group', no_units='$unit', disease='$disease' where donation_id='$donation_id'";
 $rs = mysqli_query($con,$q);
 

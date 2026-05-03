@@ -1,9 +1,9 @@
 <?php
+require_once '../config.php';
 
 $id = $_GET['id'];
 $status = $_GET['status'];
 
-$con = mysqli_connect('localhost', 'root', '8338','bloodbank');
 $q = "update donation set status='$status' where donation_id='$id'";
 $rs = mysqli_query($con,$q);
 
